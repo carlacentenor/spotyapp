@@ -4,11 +4,4 @@
   </div>
 </div>
 
-<div class="card-columns m-5">
-    <div class="card" *ngFor="let artist of artistas">
-<img class="card-img-top" [src]="artist.images " alt="card image">
-      <div class="card-body">
-        <h5 class="card-title">{{artist.name}}</h5>
-      </div>
-    </div>
-  </div>
+<app-tarjetas [items]="artistas"></app-tarjetas>
